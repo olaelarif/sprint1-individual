@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<h1>Items</h1>
+<table style="width:100%">
+  <tr>
+    <th>ID</th>
+    <th>Name</th> 
+    <th>price</th>
+    <th>created at</th>
+    <th>updated at</th>
+    <th>seller name</th>
+ 
+  </tr>
+<tr><td><input type="text" ng-model="id" placeholder="Enter id here"></td>
+  <td><input type="text" ng-model="name" placeholder="Enter name here"></td>
+  <td><input type="text" ng-model="price" placeholder="Enter price here"></td>
+<td></td>
+<td></td>
+  <td><input type="text" ng-model="seller-name" placeholder="Enter seller name "></td>
+  <td><input type="submit" class="btn" value="edit" (click)= "onUpdate()"></td>
+  <td><input type="submit" class="btn" value="delete" (click)= "onDelete()"></td>
+</tr>
+  
+</table>
+<div>
+<tr>
+<button class ="button"(click) = "onCreate()">create</button>  
+</tr>
+</div>
+
+</body>
+</html>
+
+
+
